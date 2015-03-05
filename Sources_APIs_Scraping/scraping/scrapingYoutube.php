@@ -1,0 +1,69 @@
+<?php
+include "libDOM.php";
+
+/*
+ * Scraping from youtube
+ */
+class ScrapingYoutube{
+	
+	/* ============= Constructors ============= */
+    public function __construct(){   
+    }
+    
+    /* ============= Public Methods ============= */
+    
+	/**
+	* Get a video of a song by an artist
+	*
+	* @param artist $artist name of the artist
+	* @param string $song name of the song
+	*
+	*/    
+    public function getVideo($artist,$song){
+    	
+    	/* Preprocess parameters */
+        $artist = $this->preprocessingString($artist);
+        $song = $this->preprocessingString($song);
+        
+        /* Build up url */
+        $url = "https://www.youtube.com/results?search_query=".$artist."+".$song;
+        
+        /* Get DOM */
+        $dom = new libDOM();
+        $xPath = $dom->getDOM($url);
+    	
+    	/* Make query */
+        $query = "//*[@id='section-list']/li/ol[@class='item-section']/li";
+        $rs = $xPath->query($query);
+		
+		/* Print the output in an iframe*/
+		echo "<ul>";
+            $el = $rs->item(0);
+            $link = $el->getElementsByTagName('a')->item(0)->getAttribute('href');
+			preg_match_all("/v=([a-z|A-Z|0-9|\W\_]+)/", $link, $match);  // r.e. for getting the ID, i.e: wYM1avsWFEI
+            $suffix = $match[1][0];
+            echo "<iframe id=\"pescetello_video\" title=\"video-youtube\" type=\"text/html\"  src=\"http://www.youtube.com/embed/".$suffix."\"></iframe>";
+            echo "</li>";
+        echo "</ul>";
+    }
+    
+    
+
+	
+	/**
+	* Preprocess the string in the correct format
+	*
+	* @param string $str string to preprocess 
+	*
+	* @return DOMXPath $str string after preprocessing
+	*/
+    function preprocessingString($str){
+        for ($i=0; $i<strlen($str); $i++){
+            if ($str[$i]==' '){
+                $str[$i]='+';}
+        }
+        return $str;
+    }
+    
+}
+?>

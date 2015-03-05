@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Musicae</title>
+		<meta name="keywords" content="music, concerts, artists, events" />
+		<meta name="description" content="All about music" />
+		<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+
+		<script src="javascriptFunctions.js" type="text/javascript"></script>	
+	</head>
+
+<body>
+<div id="templatemo_container">
+
+	<div id="templatemo_header">
+    	<div id="templatemo_title">
+            <div id="templatemo_sitetitle">Musicæ</div>
+        </div>
+    </div>
+
+	<div id="templatemo_banner">
+       	<div id="templatemo_banner_text">
+            <div id="banner_title">Welcome To Musicæ</div>
+            <p>
+            INSERIRE DESCRIZIONE
+			</p>
+       	</div>
+	</div>
+    
+    <div id="templatemo_menu">
+     	<ul>
+			<li><a href="index.html" class="current">Main Page</a></li>
+		</ul>  
+    </div>
+    
+    <div id="templatemo_content">
+    
+    	<div id="templatemo_left_column">
+            <h2>About Us</h2>
+            <div class="left_col_box">
+
+			</div>
+            
+            <h2>Charts</h2>
+			<div>
+				<select onchange="startChart(this.options[this.selectedIndex].value);" stylesheet="border-left:25px;">
+				<option value="rock">Rock</option>
+				<option value="pop">Pop</option>
+				<option value="classical">Classical</option>
+				<option value="metal">Metal</option>				
+				<option value="jazz">Jazz</option>
+				<option value="folk">Folk</option>
+			</select>
+			</div>
+			<div id="pescetello_div_chart"></div>
+        </div><!--fine templatemo_left_column-->
+        
+        <div id="templatemo_right_column">
+        	<div id="new_released_section">
+            	<h1 id="pescetello_h1">Genres</h1>
+            	<div class="new_released_box">
+                <img class="myimage"src="images/rock.png" alt="image"	onclick="window.location.href='subpageGenre.php?genre=rock'"/>
+                    <h3>Rock</h3>  
+            	</div>
+				<div class="new_released_box">
+                <img class="myimage"src="images/pop.png" alt="image" onclick="window.location.href='subpageGenre.php?genre=pop'"/>
+                    <h3>Pop</h3> 
+            	</div>
+					<div class="new_released_box">
+                <img class="myimage"src="images/classical.png" alt="image" onclick="window.location.href='subpageGenre.php?genre=classical'"/>
+                    <h3>Classic</h3> 
+            	</div>
+					<div class="new_released_box">
+                <img class="myimage"src="images/metal.png" alt="image" onclick="window.location.href='subpageGenre.php?genre=metal'"/>
+                    <h3>Metal</h3> 
+            	</div>
+					<div class="new_released_box">
+                <img class="myimage"src="images/jazz.png" alt="image" onclick="window.location.href='subpageGenre.php?genre=jazz'"/>
+                    <h3>Jazz</h3> 
+            	</div>
+					<div class="new_released_box">
+                <img class="myimage"src="images/folk.png" alt="image" onclick="window.location.href='subpageGenre.php?genre=folk'"/>
+                    <h3>Folk</h3> 
+            	</div>
+            </div>
+		</div>    <!--fine templatemo_right_column-->            
+            
+	</div><!--fine templatemo_content-->
+
+    
+	<div id="templatemo_footer">
+       
+        Copyrigth PesceTello
+	</div>
+
+ </div>
+</body>
+ 

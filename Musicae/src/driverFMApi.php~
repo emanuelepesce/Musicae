@@ -1,0 +1,15 @@
+<?php
+
+include 'apiFM.php';
+
+$api = new fmApi();
+$genre=$_GET['genre'];
+$chart = $api->getChartAlbums($genre, "10");
+$punto=". ";
+$i=0;
+foreach($chart as $el){
+	$i++;
+	echo "<br><h3 id=\"pescetello_h3\">".$i.$punto.$el."</h3>";
+}
+?>
+

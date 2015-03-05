@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<!-- Head -->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Musicae</title>
+		<meta name="keywords" content="music, concerts, artists, events" />
+		<meta name="description" content="All about music" />
+		<link rel="shortcut icon" href="./images/ae_logo.png"/>
+		<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+
+		<script src="javascriptFunctions.js" type="text/javascript"></script>	
+	</head>
+	
+	<!-- Body -->
+	<body>
+	<?php 
+		if(isset($_SESSION['genre']))
+			session_destroy();
+	?>	
+	<div id="templatemo_container">
+
+		<div id="templatemo_header">
+			<div id="templatemo_title">
+		        <div id="templatemo_sitetitle">Musicæ</div>
+		    </div>
+		</div>
+
+		<div id="templatemo_banner">
+		   	<div id="templatemo_banner_text">
+		        <div id="banner_title"> Discover and explore new genres, artists and songs </div>
+		   	</div>
+		</div>
+		
+		<div id="templatemo_menu">
+		 	<ul>
+				<li><a href="index.html" class="current">Main Page &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+			</ul>  
+		</div>
+		
+		<div id="templatemo_content">
+		
+			<div id="templatemo_left_column">
+		        
+		    </div><!--fine templatemo_left_column-->
+		    
+		    <div id="templatemo_right_column">
+				<div id="contactContent">
+				Musicæ is a project developed for the course of Data Integration (University of Salerno) by Miriam Granatello and Emanuele Pesce.
+				<p> 
+				Contacts:
+			
+					<table>
+						<tr>
+							<td><img src="./images/emanuele.jpg"/>
+							<td>
+								<ul>
+									<li>Emanuele Pesce</li>
+									<p>
+									<ul  style="list-style: none;">
+										<li> Github:<a href="https://github.com/emanuelepesce"> https://github.com/emanuelepesce </a></li>
+										<li> Email: <a href="mailto:emanuelepesce.ep@gmail.it">emanuelepesce.ep@gmail.it </a></li>
+									</ul>
+								</ul>
+						</tr>
+					</table>
+					
+					<table>
+						<tr>
+							<td><img src="./images/miriam.png">
+							<td>
+								<ul>
+									<li>Miriam Granatello</li>
+									<p><ul style="list-style: none;">
+										<li> Linkedin:<a href="https://it.linkedin.com/pub/miriam-granatello"> https://it.linkedin.com/pub/miriam-granatello </a></li>
+										<li> Email: <a href="mailto:granatellomiriam@gmail.it">granatellomiriam@gmail.com </a></li>
+									</ul>
+								</ul>
+								
+						</tr>
+					</table>
+				
+				</div>	
+			</div>    <!--fine templatemo_right_column-->            
+		        
+		</div><!--fine templatemo_content-->
+
+		
+		<div id="templatemo_footer">   
+		    Copyrigth PesceTello
+		</div>
+
+	 </div>
+</body>
+ 
+</html>
