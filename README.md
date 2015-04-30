@@ -1,15 +1,15 @@
 # Musicae
-Utility functions for integration data from different music sources
+Utility functions which allow to integrate data from different music sources
 
 
 It contains the following folders: 
 ## Sources_APIs_Scraping
-Cointans wrappers for using API (The echo nest, iTunes and lastFM) and doing scraping with examples code for running them.
+It cointans wrappers for using API (The echo nest, iTunes and lastFM) and doing scraping with examples code for running them.
 
 
 
 ## Musicae
-Example of data-integration website.
+Example of data-integration website (If API statement or XSLT path will change, something may not work anymore ).
 
 
 [Musicae](http://musicae.altervista.org/)
