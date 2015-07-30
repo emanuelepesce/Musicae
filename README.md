@@ -11,11 +11,11 @@ List of sources: <br\>
 - [AZLyrics](http://www.azlyrics.com/)
 
 ##Contents 
-**Sources_APIs_Scraping** <br\>
+**Sources_APIs_Scraping:** <br\>
 
 Cointans API wrappers (The echo nest, iTunes and last.fm) and source for doing scraping (Youtube and AZLyrics). <br\>
 
-**Musicae** <br\>
+**Musicae:** <br\>
 
 Data-integration website (If API statement or XSLT path will change, something may not work anymore). <br\>
 
