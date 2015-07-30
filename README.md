@@ -1,16 +1,20 @@
 # Musicae
-Utility functions which allow to integrate data from different music sources
 
+##About
+Data integration web-based system. It allows to integrate  musical data from different sources. <br\>
+List of sources: <br\>
+- [The Echo Nest](http://the.echonest.com/)
+- [iTunes](https://www.apple.com/itunes/affiliates/resources/documentation/itunes-store-web-service-search-api.html)
+- [last.fm](https://www.apple.com/itunes/affiliates/resources/documentation/itunes-store-web-service-search-api.html)
+- [Youtube](https://www.youtube.com/)
+- [AZLyrics](http://www.azlyrics.com/)
 
-It contains the following folders: 
-## Sources_APIs_Scraping
-It cointans wrappers for using API (The echo nest, iTunes and lastFM) and doing scraping with examples code for running them.
+##Contents 
+**Sources_APIs_Scraping** <br\>
+Cointans API wrappers (The echo nest, iTunes and last.fm) and source for doing scraping (Youtube and AZLyrics). <br\>
 
-
-
-## Musicae
-Example of data-integration website (If API statement or XSLT path will change, something may not work anymore ).
-
+**Musicae** <br\>
+Example of data-integration website (If API statement or XSLT path will change, something may not work anymore). <br\>
 
 [Musicae](http://musicae.altervista.org/)
 
